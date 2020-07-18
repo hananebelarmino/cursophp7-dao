@@ -32,4 +32,20 @@ $usuario->login("user","12345");
 
 echo $usuario;
 */
+
+/*
+Criando um novo usuário
+$aluno = new Usuario("Hanane", "1212");
+
+$aluno->insert();
+
+echo $aluno;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadbyId(5);
+$usuario->update("Professora","asdads@");
+
+echo $usuario;
  ?>
