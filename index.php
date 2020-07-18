@@ -42,10 +42,20 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+Alterando um Usuário
 $usuario = new Usuario();
 
 $usuario->loadbyId(5);
 $usuario->update("Professora","asdads@");
 
+echo $usuario;
+
+*/
+
+$usuario = new Usuario();
+$usuario->loadbyId(7);
+
+$usuario->delete();
 echo $usuario;
  ?>
